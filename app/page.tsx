@@ -16,10 +16,10 @@ export default function HomePage() {
             Everyday groceries and the imports you can&apos;t find anywhere else.
           </h1>
           <p className="mt-6 text-lg text-ink-soft leading-relaxed max-w-[52ch]">
-            {site.name} is a neighborhood grocery on Burton St SE — the staples
-            you pick up every week, plus shelves of African and international
-            specialty foods. If you&apos;re after something particular, call ahead
-            and we&apos;ll check the shelf for you.
+            {site.name} is a neighborhood grocer on Burton St SE. You&apos;ll find
+            the staples you pick up every week, plus shelves of African and
+            international specialty foods. If you&apos;re after something
+            particular, call ahead and we&apos;ll check the shelf for you.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-4">
             <a
@@ -38,25 +38,22 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="mt-8 text-[15px] text-ink-muted">
-            Open seven days a week · EBT/SNAP accepted
+            Open seven days a week. EBT/SNAP accepted.
           </p>
         </div>
 
-        <figure className="min-w-0">
+        <div className="min-w-0">
           <div className="relative aspect-[4/3] overflow-hidden rounded-[4px] border border-line bg-cream-deep">
             <Image
               src="/photos/store-1.jpg"
-              alt="Inside Safari Supermarket — a shopper at the counter, aisles of imported goods and a row of flags overhead"
+              alt="Inside Safari Supermarket: a shopper at the counter, aisles of imported goods and a row of flags overhead"
               fill
               priority
               sizes="(min-width: 1024px) 600px, 100vw"
               className="object-cover"
             />
           </div>
-          <figcaption className="mt-3 text-sm text-ink-muted">
-            Inside the store on Burton St SE.
-          </figcaption>
-        </figure>
+        </div>
       </section>
 
       {/* Visit band */}
@@ -72,7 +69,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* What we carry — photos treated editorially */}
+      {/* What we carry: photos treated editorially */}
       <section className="mx-auto max-w-6xl px-5 sm:px-8 pt-16 sm:pt-24 grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16">
         <figure className="order-2 lg:order-1 min-w-0">
           <div className="relative aspect-[4/5] lg:aspect-[3/4] overflow-hidden rounded-[4px] border border-line bg-cream-deep">
@@ -97,7 +94,7 @@ export default function HomePage() {
           <div className="mt-6 space-y-5 text-ink-soft leading-relaxed max-w-[54ch]">
             <p>
               Everyday staples and fresh essentials sit alongside African and
-              international specialty foods — the ingredients that are hard to
+              international specialty foods, the ingredients that are hard to
               find in a regular supermarket.
             </p>
             <p>

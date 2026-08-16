@@ -22,7 +22,7 @@ export default function ContactForm() {
       name: formData.get("name") as string,
       email: formData.get("email") as string,
       message: formData.get("message") as string,
-      _subject: "Safari Supermarket website — new message",
+      _subject: "Safari Supermarket website: new message",
     };
 
     try {
@@ -43,7 +43,7 @@ export default function ContactForm() {
     return (
       <div className="rounded-[4px] border border-line bg-white p-8">
         <p className="font-display font-semibold text-forest text-lg">Message sent.</p>
-        <p className="mt-1 text-ink-soft">Thanks — we&apos;ll get back to you within a day.</p>
+        <p className="mt-1 text-ink-soft">Thanks. We&apos;ll get back to you within a day.</p>
       </div>
     );
   }

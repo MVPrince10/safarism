@@ -11,7 +11,7 @@ export default function Wordmark({ size = "md" }: { size?: "md" | "sm" }) {
   const markH = size === "md" ? 44 : 34;
   const markW = Math.round(markH * (695 / 430));
   return (
-    <Link href="/" className="inline-flex items-center gap-3 shrink-0" aria-label={`${site.name} — home`}>
+    <Link href="/" className="inline-flex items-center gap-3 shrink-0" aria-label={`${site.name} home`}>
       <Image
         src="/brand/mark.png"
         alt=""

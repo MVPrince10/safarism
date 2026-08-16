@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Safari Supermarket in Grand Rapids, MI — questions about specialty imports, stock checks, hours and directions.",
+    "Get in touch with Safari Supermarket in Grand Rapids, MI: questions about specialty imports, stock checks, hours and directions.",
 };
 
 export default function ContactPage() {
@@ -21,7 +21,7 @@ export default function ContactPage() {
         </h1>
         <p className="mt-5 text-lg text-ink-soft leading-relaxed max-w-[52ch]">
           Looking for a particular import, or want to check if something is in
-          stock? Send a note and we&apos;ll reply within a day — or call{" "}
+          stock? Send a note and we&apos;ll reply within a day, or call{" "}
           <a href={site.phoneHref} className="text-forest font-medium underline underline-offset-4 decoration-1 tabular-nums">
             {site.phone}
           </a>{" "}
