@@ -1,6 +1,8 @@
 # safarism — Context
 
-**2026-08-15 (T-2)** — Redesigned around the real Safari Supermarket brand. Branch `safarism-redesign` (worktree `worktrees/t-2/safarism`), awaiting Prince's eyeball of the before/after screenshots in `output/screenshots/safarism-redesign/` before merge → push → Amplify.
+**2026-08-15 (T-2) — SHIPPED.** Redesigned around the real Safari Supermarket brand. Prince approved the before/after screenshots (`output/screenshots/safarism-redesign/`), asked for three copy edits (no hero caption, "grocer", plain sentences instead of dashes), then gave the go. Merged `safarism-redesign` → `main` (fast-forward, `aa73363`), pushed; Amplify job **6** SUCCEED (18:20 MT); live HTML verified via CloudFront: `/brand/mark.png`, `/icon.png`, `/apple-icon.png`, `/opengraph-image.png` all 200 and referenced. Worktree removed, branch deleted.
+
+Left as-is on purpose: `lib/site.ts` `description` still reads "neighborhood grocery … —" (it feeds `<meta description>` / og:description only, not on-page copy). Off-limits for T-2; a one-line edit if Prince wants it aligned. Prince's original logo files were moved to `output/brand-originals/` (gitignored, throwaway) once normalised into `public/brand/`.
 
 What changed:
 - Brand assets normalised: `public/brand/mark.png` (transparent mark, 695×430) + `public/brand/lockup.webp` (trimmed full lockup; the file Prince dropped as `.jpeg` was really WebP). Originals removed from `public/photos/`.
