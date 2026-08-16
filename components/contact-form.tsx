@@ -6,7 +6,7 @@ import { site } from "@/lib/site";
 type FormStatus = "idle" | "sending" | "success" | "error";
 
 const inputClass =
-  "w-full bg-card border border-border rounded-lg px-4 py-2.5 text-sm text-ink placeholder:text-ink-muted focus:outline-none focus:border-green transition-colors";
+  "w-full rounded-[3px] border border-line bg-white px-3.5 py-2.5 text-[16px] text-ink placeholder:text-ink-muted/70 focus:outline-none focus:border-forest focus:ring-2 focus:ring-forest/20 transition-colors";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
@@ -41,9 +41,9 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-border bg-card p-8 text-center">
-        <p className="font-semibold text-green mb-1">Message sent!</p>
-        <p className="text-sm text-ink-muted">Thanks — we&apos;ll get back to you within 24 hours.</p>
+      <div className="rounded-[4px] border border-line bg-white p-8">
+        <p className="font-display font-semibold text-forest text-lg">Message sent.</p>
+        <p className="mt-1 text-ink-soft">Thanks — we&apos;ll get back to you within a day.</p>
       </div>
     );
   }
@@ -51,22 +51,22 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-ink-soft mb-1.5">Name</label>
+        <label htmlFor="name" className="block text-[15px] font-medium text-ink mb-1.5">Name</label>
         <input id="name" name="name" type="text" required className={inputClass} placeholder="Your name" />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-ink-soft mb-1.5">Email</label>
+        <label htmlFor="email" className="block text-[15px] font-medium text-ink mb-1.5">Email</label>
         <input id="email" name="email" type="email" required className={inputClass} placeholder="you@example.com" />
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-ink-soft mb-1.5">Message</label>
+        <label htmlFor="message" className="block text-[15px] font-medium text-ink mb-1.5">Message</label>
         <textarea id="message" name="message" required rows={5} className={`${inputClass} resize-none`} placeholder="Looking for something specific? Ask us." />
       </div>
-      {status === "error" && <p className="text-sm text-red-700">{errorMessage}</p>}
+      {status === "error" && <p className="text-[15px] text-rust">{errorMessage}</p>}
       <button
         type="submit"
         disabled={status === "sending"}
-        className="rounded-full bg-green text-white px-6 py-2.5 text-sm font-medium hover:bg-green-dark disabled:opacity-50 transition-colors"
+        className="rounded-[3px] bg-forest text-cream px-6 py-3 text-[15px] font-semibold hover:bg-forest-deep disabled:opacity-50 transition-colors"
       >
         {status === "sending" ? "Sending…" : "Send message"}
       </button>

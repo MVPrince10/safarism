@@ -1,18 +1,45 @@
 @import "tailwindcss";
 
+/*
+  Palette — every value is sampled from the Safari Supermarket mark
+  (public/brand/mark.png): the sun, the tree and hills, the far ridge, the
+  outline. Amber is an accent (rules, marks), never body text on cream.
+*/
 @theme {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --color-bg: #faf7f0;
-  --color-card: #ffffff;
-  --color-border: #e6e0d2;
-  --color-ink: #1c1a15;
-  --color-ink-soft: #4a4638;
-  --color-ink-muted: #7a7563;
-  --color-green: #1f6b3a;
-  --color-green-dark: #174f2b;
-  --color-sun: #e9a23b;
+  /* type — Outfit for headings/wordmark (geometric caps like the lockup), Source Sans 3 for reading */
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream: #fbf6ea;        /* page ground — the mark's pale outline stroke */
+  --color-cream-deep: #f3ead6;   /* alternate band / hover on cream */
+  --color-line: #e3d8be;         /* hairlines and borders on cream */
+  --color-white: #ffffff;        /* form fields */
+
+  --color-ink: #1f2419;          /* body text — near-black pulled toward the tree green */
+  --color-ink-soft: #4a5240;     /* secondary text */
+  --color-ink-muted: #6b7260;    /* captions, meta (4.9:1 on cream) */
+
+  --color-forest: #2f4a1f;       /* tree/foreground hill — primary, headings, buttons */
+  --color-forest-deep: #1f3a18;  /* darkest hill — dark band, button hover */
+  --color-olive: #6e8b2e;        /* lit hillside — sparing secondary accent */
+  --color-rust: #8b4a1c;         /* far ridge / "SUPERMARKET" in the lockup — labels */
+  --color-sun: #f2a93b;          /* sun disc — accent rules */
+  --color-sun-deep: #e9a23b;     /* sun rim */
+  --color-cream-on-dark: #f6efdd; /* text on forest-deep */
+  --color-cream-on-dark-soft: #cfd3bd; /* secondary text on forest-deep */
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Reading rhythm: body copy is Source Sans 3; slightly larger default. */
+body {
+  font-feature-settings: "kern", "liga";
+}
+
+/* Headings get the display face and tighter tracking by default. */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
 }
