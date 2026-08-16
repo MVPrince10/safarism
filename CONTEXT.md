@@ -2,7 +2,7 @@
 
 **2026-08-15 (T-2) — SHIPPED.** Redesigned around the real Safari Supermarket brand. Prince approved the before/after screenshots (`output/screenshots/safarism-redesign/`), asked for three copy edits (no hero caption, "grocer", plain sentences instead of dashes), then gave the go. Merged `safarism-redesign` → `main` (fast-forward, `aa73363`), pushed; Amplify job **6** SUCCEED (18:20 MT); live HTML verified via CloudFront: `/brand/mark.png`, `/icon.png`, `/apple-icon.png`, `/opengraph-image.png` all 200 and referenced. Worktree removed, branch deleted.
 
-Left as-is on purpose: `lib/site.ts` `description` still reads "neighborhood grocery … —" (it feeds `<meta description>` / og:description only, not on-page copy). Off-limits for T-2; a one-line edit if Prince wants it aligned. Prince's original logo files were moved to `output/brand-originals/` (gitignored, throwaway) once normalised into `public/brand/`.
+Follow-up 2026-08-15 18:29 MT: `lib/site.ts` `description` + `tagline` and the footer line aligned with Prince's copy rules ("grocer", no dashes) — commit `a72887e`, Amplify job **8** SUCCEED; live `/` and `/contact` render zero em dashes and zero "neighborhood grocery" (the `<title>` still says "Local Grocery Store in Grand Rapids, MI" on purpose: it's the SEO category phrase, not the store description — change it if Prince wants). Prince's original logo files were moved to `output/brand-originals/` (gitignored, throwaway) once normalised into `public/brand/`.
 
 What changed:
 - Brand assets normalised: `public/brand/mark.png` (transparent mark, 695×430) + `public/brand/lockup.webp` (trimmed full lockup; the file Prince dropped as `.jpeg` was really WebP). Originals removed from `public/photos/`.
