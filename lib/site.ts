@@ -2,9 +2,9 @@
 export const site = {
   name: "Safari Supermarket",
   legalName: "Safari Supermarket LLC",
-  tagline: "Local grocery & specialty imports in Grand Rapids, MI",
+  tagline: "Local grocer and specialty imports in Grand Rapids, MI",
   description:
-    "Family-run neighborhood grocery on Burton St SE — everyday staples plus African and international specialty imports. EBT/SNAP accepted.",
+    "Family-run neighborhood grocer on Burton St SE. Everyday staples plus African and international specialty imports. EBT/SNAP accepted.",
   url: "https://safarism.com",
   address: {
     street: "1324 Burton St SE",

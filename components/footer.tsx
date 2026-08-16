@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="space-y-4">
           <Wordmark size="sm" />
           <p className="text-sm text-ink-muted max-w-[30ch]">
-            Family-run grocery and specialty imports on Burton St SE.
+            Family-run grocer with specialty imports on Burton St SE.
           </p>
         </div>
 
